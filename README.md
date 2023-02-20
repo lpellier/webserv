@@ -3,25 +3,25 @@
 [![Stargazers][stars-shield]][stars-url]
 
 [![Built With][built-with-C++]][project-url]
-
-# Getting started
+ 
+# 1. Getting started 
 The goal of this project is to code a webserver in C++.
 
 Done in collaboration with two mates.
 
 I was in charge of parsing requests and sending appropriate responses.
 
-## Installation
+## 1.1 Installation 
 ```bash
 git clone https://github.com/lpellier/webserv.git && cd webserv
 ```
 
-# Classes
-## Config
+# 2. Classes
+## 2.1 Config
 * Parse the provided (or not) config file
 * A Config object will be created by host:ip
 
-## Server
+## 2.2 Server
 * Create a listening socket on a specific port
 * Listen for a connection
 * Accept clients
@@ -32,11 +32,11 @@ git clone https://github.com/lpellier/webserv.git && cd webserv
 * Respond with the right header + file or error
 * Execute CGI
 
-## Client
+## 2.3 Client
 * Store input message
 * Store response message
 
-# Usage
+# 3. Usage
 The server can be configured through a .conf file.
 
 The syntax of .conf files is explained below.
@@ -47,14 +47,14 @@ Once your configuration is ready, you can execute the server like so:
 $ ./webserv <conf_file_path>
 ```
 
-## Features
+## 3.1 Features
 * Server is non-blocking
 * Multi-threaded polling
 * File uploading
 * GET, POST & DELETE methods
 * Able to listen on multiple ports, and serve multiple ip addresses at the same time
 
-## Configuration example
+## 3.2 Configuration example
 ```bash
 # Comments on empty lines must not have tabs before '#' symbol.
 # Tab characters signify that the following parameter is part of the parameter above.
@@ -107,7 +107,7 @@ routes:
 			.php: /usr/bin/php-cgi
 ```
 
-# Documentation
+# 4. Documentation
 
 - [course on I/O Multiplexing](https://notes.shichao.io/unp/ch6/)
 - [how to end a telnet session](https://store.chipkin.com/articles/telnet-how-do-i-end-a-telnet-session-windows-linux-mac)
@@ -120,7 +120,7 @@ routes:
 - [CGI environement](https://www.commentcamarche.net/contents/142-cgi-les-variables-d-environnement)
 - [rfc3875 for CGI/1.1](https://datatracker.ietf.org/doc/html/rfc3875)
 
-# 3. Contact
+# 5. Contact
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 Lucas PELLIER - - pellierlucas@gmail.com
